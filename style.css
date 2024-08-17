@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    color:#eef0f2;
+}
+body {
+    background: rgba(0, 0, 0);
+    background-image: url("Images/klim-musalimov-rDMacl1FDjw-unsplash.jpg");
+    background-size: cover;
+}
+.navbar {
+    z-index: 10;
+    position: fixed;
+    width:100%;
+    padding-right:1rem ;
+    padding-top: 0.7rem;
+    padding-bottom:0.7rem;
+    background-color: rgba(0, 0, 0, 0.95);
+    font-size: 80%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: block  ;
+}
+#nav{
+    height:5vw;
+    margin-bottom:2vw;
+}
+#logo {
+    color:#eef0f2;
+    font-size:3.2vw;
+    font-family: Impact;
+    font-weight:bolder;
+    text-decoration: none;
+    inline-size: none;
+}
+#navpro{
+    display: inline-block;
+}
+.navpro{
+    text-decoration:none;
+    color:#ffffff;
+    padding:1vw;
+    margin-left: 5vw;
+}
+.navpro:hover{
+    border-radius: 5vw;
+    background-color: #2f2f2f;
+}
+#products{
+    margin-left: 27vw;
+}
+#sign{
+    display:inline-block;
+    margin-top: 2vw;
+    right: 10px;
+    position: absolute;
+}
+.sign{
+    text-decoration:none;
+    padding:0.5rem;
+    border-radius:2.5rem;
+    margin-right:1rem;
+}
+.sign:hover{
+    font-weight:600;
+}
+#login {
+    margin-left:26rem;
+    color:#000000;
+    background-color: #ffffff;
+}
+#signup{
+    color:#ffffff;
+    border-color:rba(0,0,0,0.25);
+    background-color: #000000;
+}
+#image1{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 2vw;
+    height: 30vw;
+    width:60vw;
+    background-image: url(Images/Image2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#slogan{
+    color:rgb(255, 255, 255);
+    text-align:center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;   
+    font-size:3vw;
+    font-weight:200;
+    text-transform:capitalize;
+    padding:1%;
+    padding-left: 10%;
+    padding-right:10%;
+} 
+#intro{
+    font-size:1.7vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    padding:1%;
+    padding-left: 10%;
+    padding-right:10%;
+}
+#text{
+    font-size:1.5vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 60;
+    padding: 50px;
+}
+form.example{
+    display:flex;
+    position:relative;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    top: 18vw;
+}
+form.example input[type="text"] {
+    font-size: 1rem;
+    padding: 1.07vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border:none;
+    border-top: 1px solid rgba(255, 255, 255, 0.489);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.489);
+    border-left: 1px solid rgba(255, 255, 255, 0.489);
+    border-radius: 2rem 0 0 2rem;
+    height: 1vw;
+    width: 30vw;
+    background-color: rgba(0, 0, 0, 0.936);
+    color: #1f1818;
+}
+form.example button[type="submit"] {
+    font-size: 1vw;
+    padding: 1.57vw;
+    height: 1vw;
+    width:0.1vw;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.489);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.489);
+    border-right: 1px solid rgba(255, 255, 255, 0.489);
+    background-image: url(Images/Arrow1.png);
+    background-position-x:0vw;
+    background-repeat:no-repeat;
+    background-position-y:0.65vw;
+    background-size:2vw;
+    border-radius:0 2rem 2rem 0;
+    background-color: rgba(0, 0, 0, 0.963);
+    color: #ffffff;
+    cursor: pointer;
+    transition: all;
+    transition-duration:0.5s;
+}
+form.example button:hover {
+    background-position-x:0.7vw;
+}
+h3{
+    padding: 8vw;
+}
