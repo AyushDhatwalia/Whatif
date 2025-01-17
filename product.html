@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Whatif</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111111;
+            color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #logo {
+            color: #eef0f2;
+            font-size: 3.2vw;
+            font-family: Impact;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+        .cart-icon {
+            color: #ffffff;
+            font-size: 2rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        .cart-icon i {
+            margin-right: 10px;
+        }
+        .cart-icon:hover {
+            color: #e50914;
+        }
+        .product-container {
+            display: flex;
+            padding: 40px;
+            justify-content: center;
+        }
+        .product-image {
+            max-width: 500px;
+            margin-right: 30px;
+        }
+        .product-details {
+            max-width: 600px;
+            color: #f1f1f1;
+        }
+        .product-title {
+            font-size: 36px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 28px;
+            color: #e50914;
+            margin-bottom: 20px;
+        }
+        .description {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .buy-now-button, .add-to-cart-button {
+            background-color: #e50914;
+            color: #ffffff;
+            padding: 15px 30px;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            margin-right: 10px;
+        }
+        .buy-now-button:hover, .add-to-cart-button:hover {
+            background-color: #f1f1f1;
+            color: #111111;
+        }
+        footer {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            color: #e50914;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a id="logo" href="account.html">What if</a>
+    <a class="cart-icon" href="cart.html">
+        <img src="Images\cart.svg">
+    </a>
+</header>
+
+<div class="product-container">
+    <div class="product-image">
+        <img src="Images\image6.jpg" alt="WF Processor" style="width: 100%; border-radius: 10px;">
+    </div>
+
+    <div class="product-details">
+        <div class="product-title">WF Processor</div>
+        <div class="price">₹1,00,000</div>
+        <div class="description">
+            <p>Introducing the latest in our collection, the WF Processor is an AI-powered processor with amazing functionality, and innovation to bring you an unmatched experience. This product is designed to meet your needs.</p>
+        </div>
+        <button class="add-to-cart-button" onclick="addToCart('WF Processor', 100000)">Add to Cart</button>
+        <button class="buy-now-button" onclick="buyNow('WF Processor', 100000)">Buy Now</button>
+    </div>
+</div>
+
+<div class="product-container">
+    <div class="product-image">
+        <img src="Images\image7.jpg" alt="WF Graphic Cards" style="width: 100%; border-radius: 10px;">
+    </div>
+
+    <div class="product-details">
+        <div class="product-title">WF Graphic Cards</div>
+        <div class="price">₹1,32,000</div>
+        <div class="description">
+            <p>Introducing the latest in our collection, WF GPU is an AI-powered processing and graphic generation tool with amazing functionality and innovation to bring you an unmatched experience. This product is designed to meet your needs.</p>
+        </div>
+        <button class="add-to-cart-button" onclick="addToCart('WF Graphic Cards', 132000)">Add to Cart</button>
+        <button class="buy-now-button" onclick="buyNow('WF Graphic Cards', 132000)">Buy Now</button>
+    </div>
+</div>
+
+<footer>
+    <div>Follow us:</div>
+    <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+    </div>
+    <p>&copy; 2025 Whatif . All rights reserved.</p>
+</footer>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script> 
+
+<script>
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    function addToCart(productName, price) {
+        const product = { name: productName, price: price, image: "image6.jpg" }; 
+        cart.push(product);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        alert(productName + " has been added to your cart.");
+    }
+
+    function buyNow(productName, price) {
+        alert("Proceeding to checkout for " + productName);
+    }
+</script>
+
+</body> 
+</html>
